@@ -1,0 +1,58 @@
+
+Carly Staheli
+9:24 PM (6 minutes ago)
+to me
+
+body {
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#day-forecast {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+ul {
+    background-color: rgb(138, 186, 202);
+    width: 50%;
+    border-radius: 50px;
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+li {
+    color: white;
+    font-size: large;
+    list-style-type: none;
+    padding-left: 1rem;
+}
+
+#search-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    width: 50%;
+    height: 2rem;
+    border-radius: 25px;
+    padding-left: 1rem;
+}
+
+button {
+    background-color: rgb(102, 102, 180);
+    color: white;
+    font-size: larger;
+    width: 25%;
+    height: 3rem;
+    border-radius: 50px;
+    margin: 1rem;
+}
