@@ -6,7 +6,7 @@ var weatherApiKey = '672c0e16208bfbcdccb5e0e26b7d03b2';
 
 function getCoords() {
     var cityName = searchBar.value;
-    var url = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${weatherApiKey}`;
+    var url = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${weatherApiKey}`;
 
     fetch(url)
         .then(function (response) {
@@ -22,7 +22,7 @@ function getCoords() {
 }
 
 function getWeather(lat, lon) {
-    var url = `http://api.openweathermap.org/data/2.5/forecast?units=imperial&lat=${lat}&lon=${lon}&appid=${weatherApiKey}`;
+    var url = `https://api.openweathermap.org/data/2.5/forecast?units=imperial&lat=${lat}&lon=${lon}&appid=${weatherApiKey}`;
     fetch(url)
         .then(function (response) {
             return response.json();
